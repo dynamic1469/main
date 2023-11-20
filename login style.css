@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url("HD-wallpaper-red-waves-on-black-background-red-aesthetic.jpg");
+    background-color: black;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -20,10 +20,10 @@ body {
     width: 750px;
     height: 450px;
     background: transparent;
-    border: 2px solid crimson;
-    box-shadow: crimson;
+    border: 2px solid #CEFF1A;
+    box-shadow: #CEFF1A;
     overflow: hidden;
-    box-shadow: 0px 0px 25px crimson;
+    box-shadow: 0px 0px 25px #CEFF1A;
 
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .form-box h2:hover {
-    color: crimson;
+    color: #CEFF1A;
 }
 
 
@@ -74,7 +74,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: WHITE;
-    border-bottom: 2px solid crimson;
+    border-bottom: 2px solid #CEFF1A;
 }
 
 .input-box label {
@@ -91,7 +91,7 @@ body {
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-    color: crimson;
+    color: #CEFF1A;
 }
 
 .input-box i {
@@ -106,14 +106,14 @@ body {
 
 .input-box input:focus~i,
 .input-box input:valid~i {
-    color: crimson;
+    color: #CEFF1A;
 }
 
 .btn {
     height: 50px;
     width: 50%;
     padding: 0.8em 1.8em;
-    border: 2px solid crimson;
+    border: 2px solid #CEFF1A;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -123,7 +123,7 @@ body {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: crimson;
+    color: #CEFF1A;
 }
 
 .btn::before {
@@ -134,7 +134,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: crimson;
+    background: #CEFF1A;
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -156,7 +156,7 @@ body {
 }
 
 .link p a {
-    color: crimson;
+    color: #CEFF1A;
     text-decoration: none;
     font-weight: 600;
 }
@@ -199,8 +199,8 @@ body {
     right: 0;
     width: 850px;
     height: 600px;
-    border-bottom: 3px solid crimson;
-    background: linear-gradient(45deg, #081b29, crimson);
+    border-bottom: 3px solid #CEFF1A;
+    background: linear-gradient(45deg, #081b29, #CEFF1A);
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
 }
