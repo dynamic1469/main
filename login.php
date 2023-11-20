@@ -3,7 +3,7 @@ session_start();
 // Include database connection details
 $host = 'localhost'; // e.g., localhost
 $username = 'root';
-$password = 'MYsql@2023';
+$password = 'Mysql@2023';
 $dbname = 'your_database_name';
 
 // Connect to MySQL server

@@ -107,6 +107,46 @@ body {
     color: crimson;
 }
 
+.navbar .btn {
+    margin-left: 30px;
+    height: 50px;
+    width: 150px;
+    padding: 0.8em 1.8em;
+    border: 2px solid crimson;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: crimson;
+}
+
+.navbar .btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: crimson;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.navbar .btn:hover::before {
+    width: 200px;
+}
+
+.navbar .btn:hover {
+    color: #111;
+    border: 2px solid black;
+}
 
 /*key frames aniamion*/
 @keyframes slideRight {
