@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Audiowide", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("HD-wallpaper-red-waves-on-black-background-red-aesthetic.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BOX {
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid crimson;
+    box-shadow: crimson;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px crimson;
+
+}
+
+.BOX .form-box {
+
+    position: absolute;
+    background: transparent;
+    top: 0%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.BOX .form-box.login {
+    left: 0;
+    padding: 0 40px;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    color: WHITE;
+    text-align: center;
+
+}
+
+.form-box h2:hover {
+    color: crimson;
+}
+
+
+.form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-right: 23px;
+    font-size: 16px;
+    font-weight: 500;
+    color: WHITE;
+    border-bottom: 2px solid crimson;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: WHITE;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    color: crimson;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: WHITE;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: .5s;
+}
+
+.input-box input:focus~i,
+.input-box input:valid~i {
+    color: crimson;
+}
+
+.btn {
+    height: 50px;
+    width: 100%;
+    padding: 0.8em 1.8em;
+    border: 2px solid crimson;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: crimson;
+}
+
+.btn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: crimson;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 105%;
+}
+
+.btn:hover {
+    color: #111;
+}
+
+
+.form-box .link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.link p a {
+    color: crimson;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link p a:hover {
+    text-decoration: underline;
+}
+
+.BOX .info-text {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.BOX .info-text.login {
+    right: 0;
+    text-align: right;
+    padding: 0px 40px 60px 150px;
+}
+
+.info-text h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: WHITE;
+    line-height: 1.3;
+}
+
+.info-text p {
+    font-size: 16px;
+    color: WHITE;
+}
+
+.BOX .bg-animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    border-bottom: 3px solid crimson;
+    background: linear-gradient(45deg, #081b29, crimson);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+}
