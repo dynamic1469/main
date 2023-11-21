@@ -1,4 +1,4 @@
-var typed = new Typed(".multiple-text", {
+var typed = new typed(".multiple-text", {
     strings: ["OASIS", " ALT F4 ", "GRAPHIC ERA", "AMAZON", "GOOGLE"],
     typespeed: 100,
     backspeed: 100,
@@ -6,6 +6,7 @@ var typed = new Typed(".multiple-text", {
     loop: true
 
 })
+
 let sections = document.querySelectorAl1('section');
 
 window.onscroll = () => {
