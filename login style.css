@@ -17,13 +17,13 @@ body {
 
 .BOX {
     position: relative;
-    width: 750px;
-    height: 450px;
+    width: 60%;
+    height: 70%;
     background: transparent;
-    border: 2px solid #CEFF1A;
-    box-shadow: #CEFF1A;
+    border: 2px solid #5a189a;
+    box-shadow: #5a189a;
     overflow: hidden;
-    box-shadow: 0px 0px 25px #CEFF1A;
+    box-shadow: 0px 0px 25px #5a189a;
 }
 
 .BOX .form-box {
@@ -41,6 +41,7 @@ body {
 .BOX .form-box.login {
     left: 0;
     padding: 0 40px;
+    display: none;
 }
 
 .form-box h2 {
@@ -53,7 +54,7 @@ body {
 }
 
 .form-box h2:hover {
-    color: #CEFF1A;
+    color: #5a189a;
 }
 
 
@@ -75,7 +76,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: WHITE;
-    border-bottom: 2px solid #CEFF1A;
+    border-bottom: 2px solid #5a189a;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
@@ -97,7 +98,7 @@ body {
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-    color: #CEFF1A;
+    color: #5a189a;
 }
 
 .input-box i {
@@ -114,14 +115,14 @@ body {
 
 .input-box input:focus~i,
 .input-box input:valid~i {
-    color: #CEFF1A;
+    color: #5a189a;
 }
 
 .btn {
     height: 50px;
     width: 100%;
     padding: 0.8em 1.8em;
-    border: 2px solid #CEFF1A;
+    border: 2px solid #5a189a;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -131,8 +132,9 @@ body {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #CEFF1A;
+    color: #5a189a;
     opacity: 0;
+    margin: 20px 0px 0px 0px;
     animation: slidezoom 0.7s ease forwards;
 }
 
@@ -144,20 +146,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #CEFF1A;
+    background: #5a189a;
     transition: .5s ease;
     display: block;
     z-index: -1;
 }
 
 .btn:hover::before {
-    width: 200%;
-    height: 500%;
+    width: 400%;
+    height: 650%;
 }
 
 .btn:hover {
     color: #111;
-    filter: drop-shadow(0px 0px 25px #CEFF1A);
 }
 
 .form-box .icons {
@@ -166,18 +167,19 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 20px 0px 0px 0px;
 }
 
 .icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #CEFF1A;
+    border: 2px solid #5a189a;
     text-decoration: none;
-    font-size: 28px;
-    color: #CEFF1A;
-    height: 40px;
-    width: 74px;
+    font-size: 30px;
+    color: #5a189a;
+    height: 50px;
+    width: 100px;
     background: transparent;
     transition: .3s;
     opacity: 0;
@@ -192,7 +194,7 @@ body {
     width: 0%;
     top: 0;
     left: 0;
-    background: #CEFF1A;
+    background: #5a189a;
     z-index: -1;
     transition: 0.5s;
 
@@ -209,14 +211,14 @@ body {
 .form-box .link {
     font-size: 14.5px;
     text-align: center;
-    margin: 30px 0 10px;
+    margin: 50px 0 10px;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: 1s;
 }
 
 .link p a {
-    color: #CEFF1A;
+    color: #5a189a;
     text-decoration: none;
     font-weight: 600;
 }
@@ -239,6 +241,7 @@ body {
     right: 0;
     text-align: right;
     padding: 0px 40px 60px 150px;
+    display: none;
 }
 
 .info-text h2 {
@@ -261,13 +264,29 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 850px;
-    height: 600px;
-    border-bottom: 3px solid #CEFF1A;
-    background: linear-gradient(45deg, #081b29, #CEFF1A);
-    transform: rotate(10deg) skewY(40deg);
+    width: 900px;
+    height: 650px;
+    border-bottom: 3px solid #5a189a;
+    background: linear-gradient(45deg, #081b29, #5a189a);
+    /* transform: rotate(10deg) skewY(40deg); */
+    transform: rotate(0) skewY(0);
     transform-origin: bottom right;
 }
+
+.BOX .bg-animate2 {
+    position: absolute;
+    top: 100%;
+    left: 400px;
+    width: 900px;
+    height: 700px;
+    border-bottom: 3px solid #5a189a;
+    background: #081b29;
+    /* transform: rotate(10deg) skewY(40deg); */
+    transform: rotate(-11deg) skewY(-41deg);
+    transform-origin: bottom left;
+}
+
+.form-box.register {}
 
 /*key frames aniamion*/
 @keyframes slideRight {

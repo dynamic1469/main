@@ -5,143 +5,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+    integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
-  <header class="header">
+  <div class="header">
     <a href="#" class="logo">ALT F4</a>
-
     <nav class="navbar">
-      <a href="#" style="--i:1;" class="active">Home</a>
-      <a href="#" style="--i:2;">Services</a>
-      <a href="#" style="--i:3;">Portfolio</a>
-      <a href="#" style="--i:4;">About</a>
-      <a href="#" style="--i:5;">Contact</a>
+
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button style="--i:1;">INFORMATION</button>
+        <div class="dropdown-menu information-grid">
+          <div class="dropdown-heading"> FREE TUTORIALS
+            <a href="#" class="links">all</a>
+            <a href="#" class="links">latest</a>
+            <a href="#" class="links">popular</a>
+          </div>
+
+
+          <div class="dropdown-heading">EMAILS
+            <a href="#" class="links">XYZ@GMAIL.COM</a>
+            <a href="#" class="links">lat@GMAIL.COM</a>
+            <a href="#" class="links">pop@GMAIL.COM</a>
+          </div>
+
+          <div class="dropdown-heading"> NUMBERS
+            <a href="#" class="links">623353515</a>
+            <a href="#" class="links">121302301</a>
+            <a href="#" class="links">902381391</a>
+          </div>
+
+          <div class="dropdown-heading">SEVICES
+            <a href="#" class="links">WEB DEV</a>
+            <a href="#" class="links">GAME DEV</a>
+            <a href="#" class="links">AI </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown2">
+        <button class="link" style="--i:2;">INFORMATION</button>
+        <div class="dropdown-menu">
+          dropdown content
+        </div>
+      </div>
+
+      <div class="dropdown3">
+        <button class="link" style="--i:3;">INFORMATION</button>
+        <div class="dropdown-menu">
+          dropdown content
+        </div>
+      </div>
+
+      <div class="dropdown4">
+        <button class="link" style="--i:4;">INFORMATION</button>
+        <div class="dropdown-menu">
+          dropdown content
+        </div>
+      </div>
+
       <button class="btn" type="submit" name="register" onclick="login()">LOG IN</button>
     </nav>
+  </div>
+  </nav>
   </header>
   <section class="home">
     <div class="home-content">
       <!-- <h2>HELLO!</h2>
       <h1>PLAYER 1</h1>
       <h3>WELCOME TO <span class="multiple-text"></span></h3> -->
-      <h1>GO</h1>
-      <h2>F*CK</h2>
-      <h3>YOURSELF</h3>
-      <h4>BIATCH!</h4>
+      <h1>WE</h1>
+      <h2>MAKE</h2>
+      <h3>GOOD</h3>
+      <h4>SHITZ!</h4>
     </div>
   </section>
   <!-- <-- 2nd page ( services)-->
-  <section class="portfolio" id="portfolio">
+  <section class="services" id="services">
 
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="images\portfolio1.jpg">
-        <div class="portfolio-layer">
-          <h4>WEB DESIGN</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dolorum.</p>
+    <div class="card-container1">
 
-        </div>
-      </div>
+      <div class="card-1"></div>
+      <div id="content1">
+        <h2>KING of the jungle</h2>
 
-      <div class="portfolio-box">
-        <img src="images\portfolio2.jpg">
-        <div class="portfolio-layer">
-          <h4>WEB DESIGN</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dolorum.</p>
-
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images\portfolio3.jpg">
-        <div class="portfolio-layer">
-          <h4>dada</h4>
-          <p>Lorem ipsum dolor.</p>
-
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images\portfolio4.jpg">
-        <div class="portfolio-layer">
-          <h4>WEB DESIGN</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dolorum.</p>
-
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images\portfolio5.jpg">
-        <div class="portfolio-layer">
-          <h4>WEB DESIGN</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dolorum.</p>
-
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images\portfolio6.jpg">
-        <div class="portfolio-layer">
-          <h4>WEB DESIGN</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, dolorum.</p>
-
-        </div>
       </div>
 
     </div>
 
   </section>
 
-  <section class="sec-1 show-animate">
-    <h1 class="animate">animation BITCH!</h1>
-    <p class="animate">scroll wali wo bhi BITCH!</p>
-  </section>
-  <section class="sec-2">
-    <h1 class="animate">animation BITCH!</h1>
-    <p class="animate">yeah csss</p>
-  </section>
-  <section class="sec-3">
-    <h1 class="animate">animation BITCH!</h1>
-    <p class="animate">karte JA SCROLL</p>
-  </section>
-  <section class="sec-4">
-
-  </section>
-  <section class="sec-5">
-    <<div class="card">
-      <p class="heading">
-        Popular this month
-      </p>
-      <p>
-        Powered By
-      </p>
-      <p>Uiverse
-      </p>
+  <div id="page1">
+    <div id="lineup"></div>
+    <div id="wrapper" mousedownat="0" previous_movd="0">
+      <div class="cards">
+        <!-- <div id="content">
+                <h1>Lorem, ipsum.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit labore, aliquid quidem quae perspiciatis sapiente fugit. Ducimus fuga sapiente eum! Alias non eos repellendus?</p>
+            </div> -->
+        <img class="card"
+          src="https://images.unsplash.com/photo-1682686581660-3693f0c588d2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="" draggable="false">
+        <img class="card"
+          src="https://images.unsplash.com/photo-1700578075560-ebacba6e5d22?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="" draggable="false">
+        <img class="card"
+          src="https://images.unsplash.com/photo-1700493624764-f7524969037d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="" draggable="false">
+        <img class="card"
+          src="https://plus.unsplash.com/premium_photo-1699910306903-4f798ce31c48?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="" draggable="false">
+        <img class="card"
+          src="https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="" draggable="false">
       </div>
-      <<div class="card">
-        <p class="heading">
-          Popular this month
-        </p>
-        <p>
-          Powered By
-        </p>
-        <p>Uiverse
-        </p>
-        </div>
-        <<div class="card">
-          <p class="heading">
-            Popular this month
-          </p>
-          <p>
-            Powered By
-          </p>
-          <p>Uiverse
-          </p>
-          </div>
-  </section>
+
+    </div>
+    <div id="linedown"></div>
+  </div>
+
+  <div id="linedown"></div>
+  </div>
+  <div id="page2">
+    <div id="imgpg2">
+      <img id="img-pg2"
+        src="https://images.unsplash.com/photo-1700417324935-17047ee0ea6a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="">
+    </div>
+  </div>
+  </div>
+
+
+  </div>
 
   <script>
     function login() {
